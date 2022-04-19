@@ -30,9 +30,70 @@ body {
 
 .navbar {
   grid-area: navbar;
-  display: flex;
   background-color: rgb(107, 107, 107);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+.menu{
+  font-size: 1.05rem;
+  color: white;
+  list-style: none;
+  padding: 3px;
+}
+
+.boton {
+  background-color: rgba(50, 50, 50, 0.75);
+  padding: 5px 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.boton:hover{
+  background-color: rgba(172, 255, 47, 0.445);
+  padding: 8px;
+  transition: 0.22s;
+}
+
+
+ul {
+  display: flex;
+  direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.05rem;
+  color: white;
+  list-style: none;
+}
+
+li a{
+  margin-right: 80px;
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: rgba(50, 50, 50, 0.4);
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  transition: 0.22s;
+}
+
+.enlace-activo{
+  background-color: rgba(50, 50, 50, 0.4);
+  padding: 3px;
+  border-radius: 6px;
+}
+
+.enlace-activo:hover{
+  background-color: rgba(172, 255, 47, 0.7);
+  padding: 5px;
+  border: 1px solid greenyellow;
+}
+
 
 .sidebarL {
   grid-area: sidebar;
@@ -42,6 +103,26 @@ body {
 .main {
   grid-area: main;
   background-color: #ccdffc;
+  
+}
+
+.main-inicio{
+  display: flex;
+  background-color: #ccdffc;
+  width: 100%;
+}
+
+.img-container{
+  display: block;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.gal-img{
+  width: 150px;
+  height: auto;
+  padding: 5px 0px;
+  border-radius: 15px;
 }
 
 .footer {
@@ -67,22 +148,6 @@ body {
   font-size: 2.5rem;
   color: white;
   
-}
-
-ul {
-  display: flex;
-  direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.05rem;
-  color: white;
-  list-style: none;
-}
-
-li a{
-  margin-right: 120px;
-  color: white;
-  text-decoration: none;
 }
 
 
@@ -113,6 +178,11 @@ img {
 
 h2 {
   font-size: 1.8rem;
+}
+
+h5{
+  text-align: center;
+  padding-top: 5px;
 }
 
 /*datos para una linea de tiempo en html*/
@@ -208,7 +278,7 @@ h2 {
   display: grid;
   grid-template: 
   "header" 100px 
-  "navbar" 50px 
+  "navbar" auto
   "main" auto 
   "sidebar" 100px 
   "footer" 100px;
@@ -220,7 +290,7 @@ h2 {
   .grid-container {
     grid-template: 
     "header header" 100px 
-    "navbar navbar" 50px 
+    "navbar navbar" auto 
     "sidebar main" auto 
     "footer footer" 100px / 
     200px auto;
