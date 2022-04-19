@@ -18,13 +18,16 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../css/est_general.css">
+    <link rel="stylesheet" href="../css/all.css">
     <title>Resumen, Parque Herrera</title>
 </head>
 
 <body class="grid-container">
     <header class="header">
         <div class="logo-UNAH">
-            <img src="../img/logo-unah-blanco.png" alt="Logo UNAH" />
+            <a href="https://www.unah.edu.hn/" target="_blank">
+                <img src="../img/logo-unah-blanco.png" alt="Logo UNAH" />
+            </a> 
         </div>
         <div class="matriz">
             <ul>
@@ -41,12 +44,33 @@
                     <a href="#">Arquitectura y Patrimonio</a>
                 </li>
                 <li class="enlace">
-                    <a href="#">Contacto</a>
+                    <a href="#" class="enlace-activo">Contacto</a>
                 </li>
             </ul>
         </div>
     </header>
-    <nav class="navbar"></nav>
+    <nav class="navbar">
+        <div class="menu">
+            <li class="boton"><i class="fa-solid fa-map-location"></i> 
+                | Ubicacion
+            </li>
+            <li class="boton"><i class="fa-solid fa-file-zipper"></i>
+                | Levantamiento
+            </li>
+            <li class="boton"><i class="fa-solid fa-asterisk"></i>
+                | Datos del IHAH
+            </li>
+            <li class="boton"><i class="fa-solid fa-laptop-file"></i>
+                | Trabajo
+            </li>
+            <li class="boton"><i class="fa-solid fa-compass-drafting"></i>
+                | Diseño
+            </li>
+            <li class="boton"><i class="fa-solid fa-flag-checkered"></i>
+                | Propuesta Final
+            </li>
+        </div>
+    </nav>
     <main class="main">
         <p>
         Breve historia
@@ -59,7 +83,22 @@
         </p>
 
     </main>
-    <aside class="sidebarL">Galeria de imagenes</aside>
+    <aside class="sidebarL">
+        <h5>
+            Galeria de Imagenes
+        </h5>
+        <div class="img-container">
+            <img class="gal-img" src="../img/gal_01.jpeg" alt="Imagen referencia 1">
+            <img class="gal-img" src="../img/gal_02.jpeg" alt="Imagen referencia 2">
+            <img class="gal-img" src="../img/gal_03.jpeg" alt="Imagen referencia 3">
+            <img class="gal-img" src="../img/gal_04.jpeg" alt="Imagen referencia 4">
+            <img class="gal-img" src="../img/gal_05.jpeg" alt="Imagen referencia 5">
+            <img class="gal-img" src="../img/gal_06.jpeg" alt="Imagen referencia 6">
+            <img class="gal-img" src="../img/gal_07.jpeg" alt="Imagen referencia 7">
+            <img class="gal-img" src="../img/gal_08.jpeg" alt="Imagen referencia 8">
+        </div>
+
+    </aside>
     <footer class="footer container-fluid">
         <div class="foot-l col-4">
             <div class="grupo-uno col-4">G-01</div>
