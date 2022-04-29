@@ -125,6 +125,11 @@ li a:hover{
   border-radius: 15px;
 }
 
+#perspectiva1{
+  width: 900px;
+  height: 500px;
+}
+
 .footer {
   grid-area: footer;
   display: flex;
